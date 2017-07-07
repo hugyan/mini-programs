@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/moive/moive"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle":"black",
+    "enablePulDownRefresh":false
+  },
+  "networkTimeout":{
+    "request":10000,
+    "connectSocket":10000,
+    "uploadFile":10000,
+    "downloadFile":10000
+  }
+}
