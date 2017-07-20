@@ -1,0 +1,31 @@
+.container {
+  background-color: #f2f2f2;
+  width: 750rpx;
+  height: 1148rpx;
+}
+.swiper {
+  width: 100%;
+  height: 636rpx;
+}
+.swiper_box {
+  width: 100%;
+  height: 600rpx;
+}
+.swiper-item {
+  width: 100%;
+  height: 600rpx;
+  overflow: hidden;
+}
+.slide-image {
+  display: block;
+  width:100%;
+  height:100%;
+}
+button[type="primary"] {
+  color:#FFFFFF;
+  background-color: #ba3337;
+}
+
+.order__btn {
+  width: 90%;
+}

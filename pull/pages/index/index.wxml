@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="swiper">
+    <swiper class="swiper_box" 
+    vertical="{{vertical}}" autolay="{{autoplay}}"
+    interval="{{interval}}" duration="{{duration}}">
+      <block wx:for-items="{{images}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <button class="weui-btn order__btn"
+   type="primary" bindtap="toSelectKFC">开始点餐</button>
+</view>

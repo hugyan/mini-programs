@@ -1,0 +1,54 @@
+<view class="container">
+    <view class="title" data-type="hall"
+     catchtap="selectElement">
+        <view class="weui-cells__title">
+            <Text>更改用餐方式</Text>
+        </view>
+        <view class="title-dots">
+            <view data-selected="takeout"
+            class="title__dot title-takeout__dot"></view>
+            <view data-selected="hall"
+            class="title__dot title-hall__dot"></view>
+        </view>
+        <view class="title-descs">
+            <view 
+            bindtap="bindType"
+            data-selected="takeout"
+            class="title__desc title-takeout__desc">外送</view>
+            <view
+            
+            data-selected="hall" 
+            class="title__desc title-hall__desc">堂食</view>
+        </view>
+        <view class="title-icons">
+            <view 
+            hidden="{{type === 'hall'}}" class="title__icon title-takeout__icon">
+                <image src="../../images/takeout_active.png"/>
+            </view>
+            <view 
+            hidden="{{!(type === 'hall')}}" class="title__icon title-hall__icon">
+                <image src="../../images/hall_active.png"/>
+            </view>
+        </view>
+
+    </view>
+    <view class="content">
+        <view class="address">
+            <view class="address-icon--left">
+                <image src="../../images/position.png"/>
+            </view>
+            <view class="address-index--middle">
+                <view class="user__desc">
+                    {{userName}}
+                    <text>{{orderWay}}</text>
+                </view>
+                <view class="address__desc">
+                    {{address}}
+                </view>
+            </view>
+            <view class="address--right">
+                <view></view>
+            </view>
+        </view>
+    </view>
+</view>

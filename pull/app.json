@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/order/order",
+    "pages/index/index",
+    "pages/takeout/takeout",
+    "pages/kfc/kfc",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "肯德基",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#dfdfdf",
+    "selectedColor": "#d81106",
+    "borderStyle": "white",
+    "background": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "堂食",
+        "selectedIconPath": "/images/hall_active.png",
+        "iconPath": "images/hall.png"
+      },
+      {
+        "pagePath": "pages/takeout/takeout",
+        "text": "外卖",
+        "selectedIconPath": "/images/takeout_active.png",
+        "iconPath": "/images/takeout.png"
+      },
+      {
+        "pagePath": "pages/kfc/kfc",
+        "text": "K金",
+        "selectedIconPath": "/images/KFC_active.png",
+        "iconPath": "/images/KFC.png"
+      }
+    ]
+  }
+}
